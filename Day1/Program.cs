@@ -7,17 +7,17 @@ namespace Day1
 {
     class Program
     {
-        static string pathToInput;
+        static string pathToInput= "input.data";
         static void Main(string[] args)
         {
             var input = File.ReadAllLines(pathToInput)
                             .Select(line => int.Parse(line))
                             .ToArray();
-            var values = FindValues();
+            var values = FindTwoValues();
             Console.WriteLine(values.Item1*values.Item2);
            
 
-            (int, int) FindValues()
+            (int, int) FindTwoValues()
             {
                 for (var i = 0; i < input.Length; i++)
                     for (var j = 0; j < input.Length - 1; j++)
