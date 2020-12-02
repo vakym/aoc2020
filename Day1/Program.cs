@@ -1,32 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
+using Input;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace Day1
 {
     class Program
     {
-        static string pathToInput= "input.data";
-        static void Main(string[] args)
+        
+        static async Task Main(string[] args)
         {
-            var input = File.ReadAllLines(pathToInput)
+            InputReader.SessionKey = "your key";
+            var input = (await InputReader.GetInput(1))
+                            .Split('\n',StringSplitOptions.RemoveEmptyEntries)
                             .Select(line => int.Parse(line))
                             .ToArray();
             var values = FindTwoValues();
-            Console.WriteLine(values.Item1*values.Item2);
+            Console.WriteLine(values.Item1 * values.Item2);
            
 
             (int, int) FindTwoValues()
             {
-                for (var i = 0; i < input.Length; i++)
-                    for (var j = 0; j < input.Length - 1; j++)
+                for (var i = 0; i < input.Length - 1; i++)
+                    for (var j = i + 1; j < input.Length - 1; j++)
                     {
-                        if (i != j)
-                            if (input[i] + input[j] == 2020)
-                            {
-                                return (input[i],input[j]);
-                            }
+                        if (input[i] + input[j] == 2020)
+                        {
+                            return (input[i],input[j]);
+                        }
                     }
                 return (0, 0);
             }
