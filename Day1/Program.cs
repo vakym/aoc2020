@@ -13,7 +13,7 @@ namespace Day1
             InputReader.SessionKey = "your key";
             var input = (await InputReader.GetInput(1))
                             .Split('\n',StringSplitOptions.RemoveEmptyEntries)
-                            .Select(line => int.Parse(line))
+                            .Select(int.Parse)
                             .ToArray();
             var values = FindTwoValues();
             Console.WriteLine(values.Item1 * values.Item2);

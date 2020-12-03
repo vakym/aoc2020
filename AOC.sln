@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day1", "Day1\Day1.csproj", "{7B6EB776-D67B-4CFB-AA06-6F03BF6CD272}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day1", "Day1\Day1.csproj", "{7B6EB776-D67B-4CFB-AA06-6F03BF6CD272}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day1_2", "Day1_2\Day1_2.csproj", "{E9902060-8E2D-4236-B3BE-937400A16947}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day1_2", "Day1_2\Day1_2.csproj", "{E9902060-8E2D-4236-B3BE-937400A16947}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputReader", "InputReader\InputReader.csproj", "{EDD582DD-4C26-4CE5-9F98-002F15BC15F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InputReader", "InputReader\InputReader.csproj", "{EDD582DD-4C26-4CE5-9F98-002F15BC15F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputReaderTests", "InputReaderTests\InputReaderTests.csproj", "{B04719FE-93EC-4E45-BE3B-4757062E63DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InputReaderTests", "InputReaderTests\InputReaderTests.csproj", "{B04719FE-93EC-4E45-BE3B-4757062E63DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day2", "Day2\Day2.csproj", "{24B9EF21-FE18-44DD-8CA0-5DAA051F29E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day2", "Day2\Day2.csproj", "{24B9EF21-FE18-44DD-8CA0-5DAA051F29E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day2_2", "Day2_2\Day2_2.csproj", "{8854C9DC-C523-421B-99BC-8ED7B98DE2E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day2_2", "Day2_2\Day2_2.csproj", "{8854C9DC-C523-421B-99BC-8ED7B98DE2E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day3_2", "Day3_2\Day3_2.csproj", "{A7CB4D9C-0EDD-462C-9977-4CA56581DE12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{8854C9DC-C523-421B-99BC-8ED7B98DE2E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8854C9DC-C523-421B-99BC-8ED7B98DE2E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8854C9DC-C523-421B-99BC-8ED7B98DE2E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7CB4D9C-0EDD-462C-9977-4CA56581DE12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7CB4D9C-0EDD-462C-9977-4CA56581DE12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7CB4D9C-0EDD-462C-9977-4CA56581DE12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7CB4D9C-0EDD-462C-9977-4CA56581DE12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

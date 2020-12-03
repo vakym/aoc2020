@@ -10,9 +10,9 @@ namespace Day2_2
         static async Task Main(string[] args)
         {
             InputReader.SessionKey = "your key";
-            var answer = (await InputReader.GetInput(2)).Split('\n', StringSplitOptions.RemoveEmptyEntries)
-                                                        .Where(line => IsCorrectPassword(line))
-                                                        .Count();
+            var answer = (await InputReader.GetInput(2))
+                                .Split('\n', StringSplitOptions.RemoveEmptyEntries)
+                                .Count(IsCorrectPassword);
             Console.WriteLine(answer);
         }
 
