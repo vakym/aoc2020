@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using Input;
@@ -12,16 +11,16 @@ namespace Day4
         static async Task Main(string[] args)
         {
             InputReader.SessionKey = "your key";
-            var passports = (await InputReader.GetInput(4))
+            var validPassportsCount = (await InputReader.GetInput(4))
                 .Split("\n\n", StringSplitOptions.RemoveEmptyEntries)
-                .Select(data => data.Split(new[] {'\n', ' '},StringSplitOptions.RemoveEmptyEntries)
+                .Select(data => data.Split(new[] {'\n', ' '}, StringSplitOptions.RemoveEmptyEntries)
                     .Select(str =>
                     {
                         var pair = str.Split(':');
                         return (pair[0], pair[1]);
                     }).ToDictionary(k => k.Item1, e => e.Item2))
                 .Count(IsValid);
-            Console.WriteLine(passports);
+            Console.WriteLine(validPassportsCount);
         }
 
         private static string[] reqFields =
@@ -34,6 +33,7 @@ namespace Day4
             "ecl",
             "pid"
         };
+
         private static bool IsValid(Dictionary<string, string> data)
         {
             foreach (var field in reqFields)
@@ -42,8 +42,4 @@ namespace Day4
             return true;
         }
     }
-
-    
-  
-
 }
