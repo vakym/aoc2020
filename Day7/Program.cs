@@ -18,9 +18,9 @@ namespace Day7
             rules = ParseRules(data);
             var startBag = bagsTypes["shiny gold"];
             var answer = GetBagsContainingBag(startBag);
-           // Console.WriteLine(answer);
+            Console.WriteLine(answer);
             var answer2 = GetBagsCountInside(startBag);
-           // Console.WriteLine(answer2);
+            Console.WriteLine(answer2);
         }
 
         private static long GetBagsCountInside(Bag bag)
