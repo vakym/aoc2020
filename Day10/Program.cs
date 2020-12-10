@@ -3,7 +3,6 @@ using System.Threading.Tasks;
 using System.Linq;
 using Input;
 using System.Collections.Generic;
-using System.Collections;
 
 namespace Day10
 {
@@ -24,8 +23,6 @@ namespace Day10
             Console.WriteLine(answer.First() * answer.Last()); // part one
 
             Console.WriteLine(FindDistinctWays(dataArr));//part two
-           
-           
         }
 
         private static long FindDistinctWays(int[] data)
